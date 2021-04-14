@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		F14395F22626E6E100C33E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14395F02626E6E100C33E55 /* Main.storyboard */; };
 		F14395F42626E6E400C33E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14395F32626E6E400C33E55 /* Assets.xcassets */; };
 		F14395F72626E6E400C33E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14395F52626E6E400C33E55 /* LaunchScreen.storyboard */; };
+		F14396012626EC1600C33E55 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F14396002626EC1600C33E55 /* Alamofire */; };
+		F14396052626EC3000C33E55 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = F14396042626EC3000C33E55 /* Rswift */; };
+		F14396092626EC4800C33E55 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F14396082626EC4800C33E55 /* SDWebImage */; };
+		F143960D2626EC6200C33E55 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F143960C2626EC6200C33E55 /* RxSwift */; };
+		F143960F2626EC6200C33E55 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F143960E2626EC6200C33E55 /* RxCocoa */; };
+		F14396132626ECB300C33E55 /* FittedSheets in Frameworks */ = {isa = PBXBuildFile; productRef = F14396122626ECB300C33E55 /* FittedSheets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14396092626EC4800C33E55 /* SDWebImage in Frameworks */,
+				F14396012626EC1600C33E55 /* Alamofire in Frameworks */,
+				F143960F2626EC6200C33E55 /* RxCocoa in Frameworks */,
+				F143960D2626EC6200C33E55 /* RxSwift in Frameworks */,
+				F14396132626ECB300C33E55 /* FittedSheets in Frameworks */,
+				F14396052626EC3000C33E55 /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,14 @@
 			dependencies = (
 			);
 			name = ViperStart;
+			packageProductDependencies = (
+				F14396002626EC1600C33E55 /* Alamofire */,
+				F14396042626EC3000C33E55 /* Rswift */,
+				F14396082626EC4800C33E55 /* SDWebImage */,
+				F143960C2626EC6200C33E55 /* RxSwift */,
+				F143960E2626EC6200C33E55 /* RxCocoa */,
+				F14396122626ECB300C33E55 /* FittedSheets */,
+			);
 			productName = ViperStart;
 			productReference = F14395E72626E6E100C33E55 /* ViperStart.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +130,13 @@
 				Base,
 			);
 			mainGroup = F14395DE2626E6E100C33E55;
+			packageReferences = (
+				F14395FF2626EC1600C33E55 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F14396032626EC3000C33E55 /* XCRemoteSwiftPackageReference "R.swift" */,
+				F14396072626EC4800C33E55 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				F143960B2626EC6200C33E55 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F14396112626ECB300C33E55 /* XCRemoteSwiftPackageReference "FittedSheets" */,
+			);
 			productRefGroup = F14395E82626E6E100C33E55 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +368,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F14395FF2626EC1600C33E55 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.2;
+			};
+		};
+		F14396032626EC3000C33E55 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		F14396072626EC4800C33E55 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.0;
+			};
+		};
+		F143960B2626EC6200C33E55 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		F14396112626ECB300C33E55 /* XCRemoteSwiftPackageReference "FittedSheets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gordontucker/FittedSheets.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F14396002626EC1600C33E55 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F14395FF2626EC1600C33E55 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F14396042626EC3000C33E55 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F14396032626EC3000C33E55 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+		F14396082626EC4800C33E55 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F14396072626EC4800C33E55 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		F143960C2626EC6200C33E55 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F143960B2626EC6200C33E55 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		F143960E2626EC6200C33E55 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F143960B2626EC6200C33E55 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F14396122626ECB300C33E55 /* FittedSheets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F14396112626ECB300C33E55 /* XCRemoteSwiftPackageReference "FittedSheets" */;
+			productName = FittedSheets;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F14395DF2626E6E100C33E55 /* Project object */;
 }
